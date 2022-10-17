@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        #inp {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Your Data Plsss</h1>
+        <br>
+        <form>
+
+            <label>Your Name Plsss : </label><br>
+            <input id="inp" style="text-align: center;" type="text"><br><br>
+            <label for="lname">Your Bio Plsss :</label><br>
+            <textarea style="width: 200px;"></textarea><br><br>
+            <label>Your Prefered Gender Plsss : </label><br><br>
+            <input type="radio" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label>Your Email Plsss : </label><br>
+            <input id="inp" style="text-align: center;" type="email" name="email"><br><br>
+            <label>Your Telephone Plsss : </label><br>
+            <input id="inp" type="tel" style="text-align: center;" placeholder="628-1918912141" pattern="[0-9]{3}-[0-9]{10}" require><br><br>
+            <label>Your Age Plsss : </label><br>
+            <input type="number" max="99" min="0"><br><br>
+            <label>Now plug yourself :D </label><br>
+            <input style="width : 300px;" type="url" name="url"><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="section1">
+        <h1>Input Item</h1>
+        <form action="#section2">
+
+            <label>Item Name &nbsp;&nbsp;&nbsp;: </label> &nbsp;&nbsp;
+            <input type="text"><br><br>
+            <label>Item Desc &nbsp;&nbsp;&nbsp;&nbsp;: </label>&nbsp;&nbsp;
+            <textarea style="width: 200px;"></textarea><br><br>
+            <label>Item Picture&nbsp; : </label>&nbsp;&nbsp;
+            <input type="file" name="itemfile" accept="image/png, image/jpeg"><br><br>
+            <label>Item Amount : </label> &nbsp;&nbsp;
+            <input type="number" min="1" placeholder="0"><br><br>
+            <label>Item Price &nbsp;&nbsp;&nbsp;&nbsp;: </label> &nbsp;&nbsp;
+            <input type="number" min="1" placeholder="Rp 1000"><br><br>
+            <label>Item Type &nbsp;&nbsp;&nbsp;&nbsp;: </label> &nbsp;&nbsp;
+            <input type="radio" name="typeitem" value="FB">
+            <label for="FB">Food/Beverage</label>
+            <input type="radio" name="typeitem" value="HN">
+            <label for="HN">House Necesities</label>
+            <input type="radio" name="typeitem" value="other">
+            <label for="other">Other</label><br><br>
+            <label>Item Review&nbsp;: </label> &nbsp;&nbsp;
+            <input list="review">
+            <datalist id="review">
+            <option value="Very Good"></option>
+            <option value="Good"></option>
+            <option value="Meh"></option>
+            <option value="Bad"></option>
+            <option value="Very Bad"></option>
+        </datalist><br><br><br>
+            <label>Why did you buy this? </label> &nbsp;&nbsp;
+            <br><br>
+            <textarea></textarea><br><br>
+
+            <a href="#section2">
+                <input type="submit" value="Submit">
+            </a>
+        </form>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="section2">
+        <h1 align="center">Item Display</h1>
+        <table align="center" border="1">
+            <tr>
+                <th>
+                    Item name
+                </th>
+                <th>
+                    Pictures
+                </th>
+
+            </tr>
+
+            <tr>
+                <td style="width: 100px; text-align: center;">
+                    Mie Sedaap Kari Kental Spesial
+                </td>
+
+                <td style="width: 300px ;" align="center">
+                    <img src="./assets/mskk.jpg" alt="Mie Sedaap Kari Kental" width="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 100px; text-align: center;">
+                    Sunlight
+                </td>
+                <td style="width: 300px ;" align="center">
+                    <img src="./assets/sunlight-jeruk-nipis.jpg" alt="Sunlight" width="100">
+                </td>
+            </tr>
+
+        </table>
+    </section>
+</body>
+
+</html>

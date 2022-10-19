@@ -1,0 +1,49 @@
+* {
+    text-align: center;
+    background-color: palevioletred;
+    color: black;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+    height: 250px;
+    width: 150px;
+}
+
+div p {
+    color: pink;
+    background-color: grey;
+}
+
+div h3 {
+    color: pink;
+    background-color: grey;
+}
+
+.book {
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    background-color: grey;
+    float: left;
+    color: pink;
+    width: 20%;
+}
+
+.book:hover h3 {
+    Background-color: black;
+    color: palevioletred;
+}
+
+.book:hover P {
+    Background-color: black;
+    color: palevioletred;
+}
+
+.book:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: black;
+    color: palevioletred;
+}

@@ -1,17 +1,39 @@
 body {
     background-color: aliceblue;
     color: purple;
-    text-align: center;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: pink;
+    z-index: 1;
 }
 
 p {
     color: blueviolet;
 }
 
+.tlc {
+    text-align: center;
+}
+
+.grid-3 {
+    grid-template-columns: auto auto auto;
+}
+
+.grid-2 {
+    grid-template-columns: auto auto;
+}
+
 .product {
     display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
+    padding-top: 50px;
 }
 
 .product>div {
@@ -50,6 +72,21 @@ div:nth-child(n+4) {
 }
 
 div:nth-child(n+7) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div:nth-child(n+10) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div:nth-child(n+13) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div:nth-child(n+16) {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -66,16 +103,14 @@ footer {
     background-color: palevioletred;
     border: solid;
     margin-top: 5px;
-    margin-bottom: -8px;
-    margin-left: -40px;
-    margin-right: -8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .fbutton {
     height: 40px;
     display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
 }
 
 a {

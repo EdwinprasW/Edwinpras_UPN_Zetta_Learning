@@ -1,0 +1,39 @@
+body {
+    background-color: aliceblue;
+    color: purple;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding-left: 400px;
+    height: 300px;
+}
+
+.container>div {
+    border: solid pink;
+    margin: 2rem;
+    width: 700px;
+    overflow-y: scroll;
+    height: 50%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 40px;
+}
+
+li:nth-child(odd) {
+    background: blueviolet;
+    color: white;
+}
+
+li:nth-child(even) {
+    background: palevioletred;
+    color: black;
+}

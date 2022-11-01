@@ -1,9 +1,9 @@
 <h2>Edwin Albums Rating Stash</h2>
-<table border="0px">
+<table>
     <h2>Liked Albums By You</h2>
-    <tr *ngFor="let albums of liked ">
-        <td>
-            {{albums.name}}
-        </td>
-    </tr>
+    <ul>
+        <li *ngFor="let albums of liked ">
+            <h3>{{albums.name}} </h3>
+        </li>
+    </ul>
 </table>

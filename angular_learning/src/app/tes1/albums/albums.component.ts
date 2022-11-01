@@ -32,11 +32,11 @@ export class AlbumsComponent implements OnInit {
     {name: 'Slim Shady LP', ratingOutOfTen: 9,  artist : 'Eminem'},
   ]
 
-  public likedAlbum : LikedAlbums[]=[]
+  public likedAlbum : LikedAlbums[]=[];
 
-  likeAlbum(theAlbums : albumList){
-    this.onlikeAlbum.emit(theAlbums)
-    this.likedAlbum.push({...theAlbums})
+  likeAlbum(theAlbum : albumList){
+    this.onlikeAlbum.emit(theAlbum)
+    this.likedAlbum.push({...theAlbum})
   }
 
   constructor() { }

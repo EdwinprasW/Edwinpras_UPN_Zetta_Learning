@@ -3,13 +3,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export interface albumList{
   name: string,
   ratingOutOfTen: number,
-  artist : string
-}
-
-export interface LikedAlbums{
-  name: string,
-  ratingOutOfTen: number,
-  artist : string
+  artist : string,
+  show :boolean
 }
 
 
@@ -25,19 +20,13 @@ export class AlbumsComponent implements OnInit {
   @Output ('albumLiked') onlikeAlbum : EventEmitter<albumList> = new EventEmitter<albumList>()
 
   public theAlbums: albumList[] = [
-    {name: 'Straight Outta Compton', ratingOutOfTen: 9, artist : 'NWA'},
-    {name: 'Vessel', ratingOutOfTen: 8, artist : 'Twenty One Pilots'},
-    {name: 'Deviltown', ratingOutOfTen: 7,  artist : 'Cavetown'},
-    {name: 'Trench', ratingOutOfTen: 10,  artist : 'Twenty One Pilots'},
-    {name: 'Slim Shady LP', ratingOutOfTen: 9,  artist : 'Eminem'},
+    {name: 'Straight Outta Compton', ratingOutOfTen: 9, artist : 'NWA', show : true},
+    {name: 'Vessel', ratingOutOfTen: 8, artist : 'Twenty One Pilots',show : true},
+    {name: 'Deviltown', ratingOutOfTen: 7,  artist : 'Cavetown',show : true},
+    {name: 'Trench', ratingOutOfTen: 10,  artist : 'Twenty One Pilots',show : true},
+    {name: 'Slim Shady LP', ratingOutOfTen: 9,  artist : 'Eminem',show : true},
   ]
 
-  public likedAlbum : LikedAlbums[]=[];
-
-  likeAlbum(theAlbum : albumList){
-    this.onlikeAlbum.emit(theAlbum)
-    this.likedAlbum.push({...theAlbum})
-  }
 
   constructor() { }
 

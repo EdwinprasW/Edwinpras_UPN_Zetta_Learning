@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LikedAlbums } from '../albums/albums.component';
+
 
 
 @Component({
@@ -9,7 +9,7 @@ import { LikedAlbums } from '../albums/albums.component';
 })
 export class LikedComponent implements OnInit {
 
-  @Input() liked!: LikedAlbums[];
+ 
 
   constructor() { }
 

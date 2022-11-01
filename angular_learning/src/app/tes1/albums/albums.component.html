@@ -2,16 +2,17 @@
     <div class="container">
         <ul>
             <div class="card">
-                <li *ngFor="let albumList of theAlbums ">
-                    <div class="card-standalone">
-                        <h2>{{ albumList.name }}</h2>
-                        <h3>{{ albumList.artist }}</h3>
-                        <p>My Rating : {{ albumList.ratingOutOfTen }}</p>
-                        <button (click)="onlikeAlbum.emit(albumList)">Like</button>
+                <li *ngFor="let albumList of theAlbums">
+                    <div *ngIf="albumList.show">
+                        <div class="card-standalone">
+                            <h2>{{ albumList.name }}</h2>
+                            <h3>{{ albumList.artist }}</h3>
+                            <p>My Rating : {{ albumList.ratingOutOfTen }}</p>
+                            <button (click)="albumList.show = false">Hide</button>
+                        </div>
                     </div>
                 </li>
             </div>
         </ul>
     </div>
-    <app-liked></app-liked>
 </main>

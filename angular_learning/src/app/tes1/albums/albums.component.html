@@ -1,1 +1,19 @@
-<p>albums works!</p>
+<main>
+    <div class="container">
+        <ul>
+            <div class="card">
+                <li *ngFor="let albumList of theAlbums ">
+                    <div class="card-standalone">
+                        <h2>{{ albumList.name }}</h2>
+                        <h3>{{ albumList.artist }}</h3>
+                        <p>My Rating : {{ albumList.ratingOutOfTen }}</p>
+                        <button (click)="onlikeAlbum.emit(albumList)">Like</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <app-liked likedAlbum="liked"></app-liked>
+    </div>
+</main>

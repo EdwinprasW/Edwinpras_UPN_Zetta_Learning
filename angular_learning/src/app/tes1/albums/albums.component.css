@@ -1,0 +1,44 @@
+.card {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem 1rem;
+}
+
+.card-standalone {
+    width: 350px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: palevioletred;
+}
+
+button {
+    display: inline-block;
+    background: whitesmoke;
+    color: palevioletred;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button:hover {
+    display: inline-block;
+    background: grey;
+    color: palevioletred;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li {
+    list-style-type: none;
+}

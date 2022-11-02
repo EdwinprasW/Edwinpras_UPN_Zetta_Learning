@@ -1,1 +1,15 @@
-<p>view works!</p>
+<main>
+    <h1 style="text-align: center;">User Offline</h1>
+    <div class="container">
+        <ul>
+            <div class="card">
+                <li *ngFor="let users of users">
+                    <div class="card-standalone">
+                        <h2>{{ users.name }}</h2>
+                        <h3>{{ users.status }}</h3>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+</main>

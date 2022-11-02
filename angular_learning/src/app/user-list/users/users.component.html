@@ -1,1 +1,21 @@
-<p>users works!</p>
+<main>
+    <div class="container">
+        <ul>
+            <div class="card">
+                <li *ngFor="let users of users">
+                    <div *ngIf="!users.done">
+                        <div class="card-standalone">
+                            <h2>{{ users.name }}</h2>
+                            <h3>{{ users.status }}</h3>
+                            <button (click)="addDone(users) " (click)=" users.done = true">Done</button>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div>
+        <app-view [users]="userDone" (userIsDone)="addDone($event)"></app-view>
+    </div>
+
+</main>
